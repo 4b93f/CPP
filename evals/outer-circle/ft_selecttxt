@@ -1,0 +1,144 @@
+0) Author file
+
+Check that the author file is at the root of the repository
+and formatted as explained in the subject. If not defence the
+is finished and final grade is 0.
+
+
+1) A lot of bonuses possible
+
+- Columns are going left and right when the window is too small
+- After termination, delete what needs to be deleted, the prompt and
+the cursor appear one line under the one used to run the program. Run
+'top' to understand.
+- A beautiful interface (up to the corrector to decide)
+- If the choices are files names, colorize the list according to the
+extensions (a bit like ls -G on OSX.
+
+
+2) Noncanonical mode
+
+When ft_select is executed with a list of arguments, the terminal goes
+into noncanonical mode check that:
+
+- Characters pressed on the keyboard aren't displayed.
+- The terminal doesn't buffurize keyboard inputs until pressing return.
+
+
+3) Penalty
+
+
+Not really a penalty: don't remove points for memory leaks or forgotten
+return values. It's dumb and useless:
+
+- if the student already has a good grade, he will keep a correct grade.
+- if he has a low grade, it will stay low. However, if you find memory
+  leaks or fails on return values, "play" with them to try to crash
+  their program. It will show how to be rigorous in his work.
+- limit maxproc 25 (limit the nomber of process, in case of zombie it
+  won't be able to execute commands).
+- limit vmemoryuse X (where X is a limit, in bytes, a little more
+  higher than the initial size of the process to check memory leaks).
+- limit descriptors X (where X is the limit fd that will be opened,
+  in the case where the program don't close opened files/pipes) 
+  From 5 [everything's good] to 0 [lots of issues].
+  There will not be any associated points, it will not lower the grade.
+
+
+4) Choices list
+
+When ft_select is executed with a list of arguments, in a window
+that's big enough for the whole list, the list is displayed at
+least on one column. It's also acceptable for the list is displayed
+on several columns.
+
+
+5) Navigation
+
+When the list is displayed, the cursor must be on the first element.
+It's then possible to move from one element to the other by pressing
+arrows on the keyboard. Navigation through the list must be "circular"
+whether the list is on one or more columns. "Circular" is open to
+interpretation. It could mean for instance that only the last element
+goes to the first one. Every behavior that remains consistant is
+acceptable if properly justified especially when involving a display
+of several columns. It is therefore totally acceptable to go from one
+column to another using the left and right arrows.  
+
+
+6) Current choice and selection
+
+The active choice (cursor's position) must be underlined. Pressing
+space must select the current choice by going reverse video mode.
+Consequently the current choice will be underlined and in reverse
+video mode.
+
+
+7) Early termination
+
+If at any time during the execution we press esc, the program must
+exit without errors. The original terminal option should be restored
+and nothing should be returned to the shell.
+
+
+8) Shell return
+
+When at least one element has been selected, pressing the return key
+will send the selected choices (separated by exactly one space if
+there is more than one choice), back to the shell. Evidently, nothing
+more than the choices should be sent back (think control characters).
+
+
+9) Resizing
+
+Resizing the window while keeping it big enough to display the whole
+list, possibly by reorganising the list on several columns or lines,
+shouldn't prevent us from using the program. Resizing the window in
+such a manner that the whole list can't be displayed should be properly
+handled. By "properly" we mean that the program is still running and
+resizing the window back to a proper size should restore the list.
+
+
+10) Element removal
+
+If delete or backspace keys are pressed, the active choice (cursor's
+position) must be removed from the list. If there is no more elements
+in the list, the program must behave as if esc key was pressed.
+
+
+11) Signals 1/2
+
+Whatever way your program exits, the default terminal options must be
+restored. That includes every catchable signals (not including
+uncatchable signals, but it'll mean that your program wasn't well
+developed anyway). Try to kill the process with ctrl+c or any other
+outside ways you come up with.
+
+
+12) Signals 2/2
+
+It is possible to interrupt your program by pressing ctrl+z and to
+restore it using the 'fg' shell command without experiencing any
+problems while using the shell over the interruption or when getting
+back to ft_select afterwards.
+
+
+13) Environment
+
+If your program is launched with either an empty or an incomplete
+environment, the program must behave reasonnably. By reasonnable we
+mean that for example the program exits directly by giving an error
+message. In no case can your program have an undetermined behavior
+because of the environment.
+
+
+14) Back quotes
+
+Ft_select must properly work in the following cases (use any combination
+you want as soon as you try using back quotes):
+
+- `ft_select choix1 choix2 choix3 choix4`
+- more `ft_select *.c`
+- rm `ft_select ~/*`
+
+

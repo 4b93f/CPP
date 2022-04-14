@@ -1,0 +1,80 @@
+0) Bonus
+
+
+You can count 5 bonus max:
+
+- A graphique that show the data
+- A graphique that show the result of the program in the same graphic as above
+- A program to get the precision of the algorithm
+- ...
+
+
+1) Preliminaries
+
+
+Please first check the following element:
+- Check again that you are checking what is on the git repository
+- No cheat, check if the student knows his subject and his code.
+- There should be 2 programs, one to predict the price and the other to train the model
+
+Please check that if a librairy has been used by the student it is not
+already implemented in it. If it s the case, stop everything, push the cheat flag and
+stop the evaluation.
+
+
+2) Prediction before training
+
+
+Launch the prediction programme. It should ask you for a
+mileage: Enter a value that is not null
+
+The programme should display the result of its prediction and should
+print the value 0 because the training hasnt started.
+
+Please verify that the equation is : theta0 + (theta1
+* x).
+
+
+3) Training phase
+
+
+Ask the student to show you its implementation of the linear regression
+algorithm. Check that the function in the subject is well implemented and that the
+program save theta0 and theta1 at the end.
+
+N'oubliez pas que si vous ne voyez pas l'équation mais qu'à la
+place une fonction comme numpy.polyfit a été utilisée, c'est
+un cas de triche et donc un flag Cheat.
+
+Don't forget that if you dont see the equation and you see numpy.polyfit or something that look like it.
+It s that the student is cheating.
+
+
+4) Read the csv
+
+
+The training program should read the csv file and use it for training itself.
+
+
+5) Simultaneous assignation
+
+
+It s a bit complex : You should check that theta0 and theta1 are set simultaneously
+during the training phase.
+
+For this verify that the result of the 2 equations during the training phase are
+saved in temporaries variable before setting theta0 and theta1 at the end of each loop.
+
+
+6) Prediction after training
+
+
+Relaunch the prediction program. Reenter the same mileage as before.
+This time it should give you a price. Enter a value from the csv file.
+
+The program should give you a price for each mileage. Is it following the csv prices?
+The difference between the csv and the prediction is normal. If the price is exactly the same
+all the time, we are maybe in a case of over-fitting. (a bonus point if the student can explain
+what it is).
+
+

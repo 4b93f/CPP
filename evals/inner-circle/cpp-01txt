@@ -1,0 +1,93 @@
+
+
+2) ex02
+
+All the classes and functions required by the subject must exist
+and work as specified, otherwise, count as wrong.
+The Zombies must be destroyed when appropriate. 
+In newZombie, it should be allocated on the heap, returned,
+and then deleted in the main(). The student must explain why.
+The Zombies created by randomChump must either be allocated on the stack (so implictly deleted
+at the end of the function), or allocated on the heap then explicitly deleted.
+The student must justify his choice.
+
+
+3) ex03
+
+All the classes and functions required by the subject must exist
+and work as specified, otherwise, count as wrong.
+The Zombies must be allocated
+in the constructor of the ZombieHorde, and should be allocated as an array,
+either on the stack, either explictly using new[], in which case they should
+be deleted in the destructor. The student must explain his choice.
+
+
+4) ex04
+
+There is a string containing "HI THIS IS BRAIN", then a pointer
+to it, then a reference to it, and it is displayed through the pointer then
+through the reference. As the subject says, really, that's it, no tricks
+or anything.
+
+
+5) ex05
+
+All the classes and functions required by the subject must exist
+and work as specified, otherwise, count as wrong.
+The "identify" function
+in the "Brain" must return the representation of "this", or any other trick
+that equates to "the adress of the current instance".
+The "getBrain"
+function should return a REFERENCE to the Brain of the current Human. With the
+main() that the subject provides, it must, as the subject says, display two
+identical adresses.
+The student should be able to explain why he did this.
+
+
+6) ex06
+
+All the classes and functions required by the subject must exist
+and work as specified, otherwise, count as wrong.
+The student must choose to store the Weapon either as pointer 
+or as a reference in HumanA and HumanB.
+In HumanA, BOTH are acceptable if justified, even if theoretically the reference
+is better, since the Weapon exists from creation until destruction and never
+changes.
+In HumanB, only the pointer is acceptable, since the field is not
+set at creation time, so it can not be a reference.
+The student must justify his choices correctly.
+
+
+7) ex07
+
+The program must work as the subject specifies. A reasonable amount
+of errors must be handled. If you can find an error that isn't handled, and
+isn't completely esoteric, count as wrong.
+The program must read from the file using an ifstream or equivalent, 
+and write using an ofstream or equivalent."
+
+
+8) ex08
+
+All the classes and functions required by the subject must exist
+and work as specified, otherwise, count as wrong.
+The "action" function must use an array of pointer to member functions
+to choose which action should be called. Any if/elseif/elseif/else or 
+other crap like this counts as wrong.
+
+
+9) ex10
+
+The program must work as the subject specifies. Any error that
+isn't handled = count as wrong."
+
+
+10) ex09
+
+All the classes and functions required by the subject must exist
+and work as specified, otherwise, count as wrong.
+Must work exactly as the subject requires.
+As with the previous exercise, the action to take when
+using "log" must be determined using an array of pointers to member functions.
+
+

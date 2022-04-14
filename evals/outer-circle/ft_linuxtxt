@@ -1,0 +1,95 @@
+0) Bonus Binaries
+
+
+Time to make your demo ! Present your distribution, and the
+software on it. Bonus point for X Applications (Windows Manager,
+X Server)
+
+
+1) Basic Linux tools
+
+
+Test the script ft_linux_basic.sh, available at the top of the
+correction page. If the score is not perfect, the scale stop
+here.
+
+
+2) Internet connection
+
+
+Internet working ? (Net module + ping / curl / ...)
+
+
+3) screen
+
+
+Now the real test.
+
+Ask the student to install the screen package. The package can
+be found
+[Here.](https://ftp.gnu.org/gnu/screen/screen-4.5.1.tar.gz)
+
+If the student can't install the package the evaluation stop
+here, grade 0.
+
+
+4) Linux Kernel
+
+
+Is the kernel a Linux one ? (If the kernel is a BSD, the scale
+stops here, if it's a DOS one, burn the student alive, kill his
+entire family, and grade -42.)
+
+
+5) Linux Version
+
+
+Is the linux version a 4.x ? Are the sources in
+/usr/src/linux-4.x ?
+
+Check the kernel version in the logs. Must be something like
+linux version-<student_login>
+
+
+6) Other binaries
+
+
+Test the following script ft_linux_others.sh, available at the
+top of the correction page. Report the score below
+
+
+7) Partitions
+
+
+Is there at least 3 partitions on the system ? (root, /boot,
+swap)
+
+
+8) Editor
+
+
+Test if an editor is present on the system. (More points if it's
+vim :D)
+
+
+9) Kernel Module loader
+
+
+Is there a module loader on the system ? (udev like)
+
+
+10) Bootloader
+
+
+Is there a bootloader ? (LILO / GRUB / ...)
+
+Check the kernel binary name in /boot. Must be something like
+vmlinuz-<linux_version>-<student_login>
+
+
+11) Daemon manager
+
+
+Is there a daemon manager ? (SysV, SystemD, ...)
+
+

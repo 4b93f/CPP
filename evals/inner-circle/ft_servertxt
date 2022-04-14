@@ -1,0 +1,29 @@
+0) verifications
+
+- Check if all the necessary configuration files of the server are in the folder srcs.
+- Check if the Dockerfile is at the root of the repository.
+- Run the "docker build ." command.
+
+
+1) Docker environment
+
+- Verify if the evaluated have only one container.
+- Verify if the container is build with Debian Buster.
+- Verify if you can run the container with "docker run xxx" without problems. (xxx is the name of the docker you've just built)
+
+
+2) Server instructions
+
+- Verify if the evaluated use Nginx (you can read the Dockerfile).
+- Verify if the server run multiple services (wordpress and phpmyadmin).
+- Verify if the server redirecter with the good website, according to the url. 
+- Verify if Nginx use the SSL protocol.
+- Verify if the server run with an index.
+
+
+3) Run website, run !
+
+- Verify if the wordpress run entirely with MySQL database. You can go in the site, log in, and watch database.
+- Verify if the SQL database work with phpmyadmin. You should see the wordpress table and data.
+
+

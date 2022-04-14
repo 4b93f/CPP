@@ -1,0 +1,105 @@
+0) Libc Functions #1
+
+Test every function and make sure they're working properly:
+- ft_memcpy
+- ft_memccpy
+- ft_memset
+- ft_bzero
+- ft_memmove
+- ft_memcmp
+- ft_memchr
+Is it working?
+
+
+1) ft_lstnew
+
+Is it working?
+
+2) ft_lstdelone
+
+Is it working?
+
+3) Libc Functions #2
+
+Test every function and make sure they're working properly:
+- ft_strlen
+- ft_isalpha
+- ft_isdigit
+- ft_isalnum
+- ft_isascii
+- ft_isprint
+Is it working?
+
+
+4) ft_lstclear
+
+Is it working?
+
+5) LibC functions #3
+
+Test every function and make sure they're working properly:
+- ft_toupper
+- ft_tolower
+- ft_strchr
+- ft_strrchr
+Is it working?
+
+
+6) ft_lstadd_front
+
+Is it working?
+
+7) LibC functions #4
+
+Test every function and make sure they're working properly:
+- ft_strlcat
+- ft_atoi
+- ft_strnstr
+- ft_strncmp
+- ft_calloc
+- ft_strdup
+Is it working?
+
+
+8) Added functions #1
+
+Test every function and make sure they're working properly:
+- ft_substr
+- ft_strjoin
+- ft_putchar_fd
+- ft_putstr_fd
+- ft_putendl_fd
+- ft_putnbr_fd
+Is it working?
+
+
+9) ft_lstadd_back
+
+Is it working?
+
+10) ft_lstsize
+
+Is it working?
+
+11) Added functions #2
+
+Test every function and make sure they're working properly:
+- ft_strmapi
+- ft_strtrim
+- ft_split
+- ft_itoa
+Is it working?
+
+
+12) ft_lstlast
+
+Is it working?
+
+13) ft_lstiter
+
+Is it working?
+
+14) ft_lstmap
+
+Is it working?
+

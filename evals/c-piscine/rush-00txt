@@ -1,0 +1,44 @@
+0) Simple preliminaries
+
+- Nothing submitted (or wrong file or directory) : 0, evaluation is over.
+- As soon as you come accross an exercise that isn't fully fonctional, evaluation stops. The following exercises won't be evaluated.
+- Make sure that the command gcc -Wall -Wextra -Werror doesn't return any errors. As a reminder, this rush expects you to use the flag -R CheckForbiddenSourceHeader for the norm check.
+
+
+1) Error handling
+
+Test here using different combinations to make sure that error handling is done correctly. The program should not crash when given a number <= 0. Try with one negative value, then swap, try with 2 negative values...
+Any unexpected behavior is considered a crash (infinite loop, false answer, or simply
+crash).
+Is accepted:
+    - The program returns an error message
+    - The program prints nothing and gives back control
+
+
+2) Bonuses
+
+This part can be filled ONLY for those who've collected all points for features and explanations. At the examiner's own discretion.
+
+Exemple de bonus :
+- fulfilment of an extra subject => 1 grade (so up to 4 max)
+- handling of Argc / Argv => 1 grade
+
+
+3) Specific cases
+
+
+Test the program with the values 1 and 2. The program must always return the expected values.
+
+
+4) Generic cases
+
+
+Here is the main part of the evaluation. Be imaginative, take your time to test multiple values and make sure that the program is always responding as expected.
+
+
+5) Discussion
+
+
+Take the time to interact with the group. Make sure that each person of the group talks about the code, and check that everyone understands and can explain it. Help them identify and talk about the problems they encountered during therush.
+
+

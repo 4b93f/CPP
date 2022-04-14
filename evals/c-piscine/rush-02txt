@@ -1,0 +1,40 @@
+0) Read
+
+Does the program handle the read syscall when no argument is given?
+
+1) Makefile
+
+The Makefile musn't relink.
+
+If the Makefile recompiles when doing two successive 'make', tick No.
+If the Makefile doesn't recompile the second time, tick Yes.
+
+2) Simple preliminaries
+
+- Nothing submitted (or wrong file or directory) : 0, evaluation is over.
+- As soon as you come accross an exercise that isn't fully fonctional, evaluation stops. The following exercises won't be evaluated.
+
+3) Correct syntax
+
+Does the program give correct answers with the right syntax (eg. 142 -> one hundred and forty-two)
+
+4) Error handling
+
+This is where you check for potential problems with the program. How does it react when you give an empty string ? Some letters which aren't numbers ? A negative number ?
+
+5) Another langage
+
+Is there a second langage available (through an option for instance) fully working ?
+
+6) Features testing
+
+Play with the program to check for everything.
+You should try cases like 0, 000000, 10, 10000, to check if the program works for everything
+
+7) Full test
+
+Try here and determine where did the students stop. Try with very high numbers, thousands, millions, billions... Give points accordingly.
+- Correct up until the hundred thousands -> 2 points
+- Correct up until the hundred millions -> 1 points
+- Correct up until the hundred billions -> 2 points
+

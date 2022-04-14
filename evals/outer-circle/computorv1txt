@@ -1,0 +1,115 @@
+0) Preliminary instructions
+
+
+First, check the following elements:
+
+- There is a turn-in (in the git repository)
+- No cheating. Students must be able to explain their code.
+- If the program is written in a compilable language, there is a Makefile
+  with the rules all, re, and clean, at least.
+- Mathematic libraries are not allowed in this project. They cannot be used
+  to calculate the delta root or any second degree equation. You should
+  check which calculation method the student used and whether they master
+  it.
+- If one of these elements is not respected, evaluation stops. Use the
+  accurate flag. Still, you're invited to keep discussing the subject, but
+  you won't use the grading system.
+
+
+1) Managing a free form entry
+
+
+Can the program manage a free form entry? * A single coefficient ("4") is
+considered a factor of X^0. * A single X is considered having a
+coefficient 1 an exponent 1. * An absent exponent ("4 * X") is considered
+as equalling 1. * An absent coefficient ("X^6") is considered as equalling
+1. * Exponents can appear in arbitrary or repeated order.
+
+
+2) Presence of a reduced equation
+
+
+The program takes an equation in account or waits for it on the standard
+entry and displays the same equation in its reduced form afterwards. Is
+it the right one ?
+
+
+3) Second bonus
+
+
+Error management in the entry (vocabulary and syntax).
+Displaying results as irreducible fractions if appropriate. Displaying
+intermediate steps. Etc...
+
+
+4) Reduced equation form
+
+
+The reduced equation shows the factors until the non null last one, only
+once, and either side of the equation is null.
+
+
+5) Entry management
+
+
+Try several entries that have a correct format but might have been ill
+managed (zero or negative or non whole coefficient...). How well does the
+program manage them? (no crash, no calculation error, no infinite loop...)
+IMPORTANT NOTICE: if the answer is NO to either question, the evaluation
+stops.
+
+
+6) 0 degree equation after reduction
+
+
+Enter a possible equation ("5 * X^0 = 5 * X^0", for instance). Does the
+program tell you that any real number is a solution? Enter an impossible
+equation ("4 * X^0 = 8 * X^0", for instance)? Does the program tell you
+there is no solution?
+
+
+7) First degree equation after reduction
+
+
+Enter a fist degree equation ("5 * X^0 = 4 * X^0 + 7 * X^1", for instance).
+Does the program show the solution to the equation? Run several tests.
+
+
+8) Second degree equation after reduction - Strictly positive discriminant
+
+
+Enter a second degree equation with a strictly positive discriminant
+("5 * X^0 + 13 * X^1 + 3 * X^2 = 1 * X^0 + 1 * X^1", for instance). Does
+the program show it has a strictly positive discriminant? Does it show
+two solutions? Are they correct? Run several tests.
+
+
+9) Second degree equation after reduction - Zero discriminant
+
+
+Enter a second degree equation with a discriminant equalling O.
+("6 * X^0 + 11 * X^1 + 5 * X^2 = 1 * X^0 + 1 * X^1", for instance).
+Does the program show it has a 0 discriminant? Does it show a single
+solution? Is it the correct one? Run several tests.
+
+
+10) Second degree equation after reduction - Strictly negative discriminant
+
+
+Enter a second degree equation with a strictly negative discriminant
+("5 * X^0 + 3 * X^1 + 3 * X^2 = 1 * X^0 + 0 * X^1", for instance). Does
+the program show it has a strictly negative discriminant? Does it show two
+complex solution? Are they correct? Run several tests. The result should
+of course show like this: α + β*i.
+
+
+11) Third or more degree equation after reduction
+
+
+Enter a third or higher degree equation. The program should refuse to solve
+the equation first. If the program solves it, you can give a score and
+show respect... as long as it doesn't crash. If the reduced equation happens
+to be a second or lower degree equation, the program should be able to
+solve it properly.
+
+

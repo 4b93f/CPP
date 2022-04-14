@@ -1,0 +1,47 @@
+0) Compilation
+
+
+Compile the program with the commands described in the subject.
+Does the project compile?
+
+
+1) Validation
+
+
+Check if the program validates the input file. Try running the
+program without an input file present, with inconsistent data,
+missing values or out of range values. Does the validation work?
+
+
+2) Exception handling
+
+
+Does the project contain custom exceptions for treating
+abnormarl behaviour specific to the program? Are they relevant?
+Do they have good messages?
+
+
+3) Program design
+
+
+Does project respect the UML class diagram to the letter? It is
+not a problem if there are additional classes or private
+attributes and methods added by the student.
+
+
+4) Simulation
+
+
+Is the simulation.txt file generated acording to the
+specifications? Check to see if the ID is unique and if all
+messages are logged correctly.
+
+
+5) Security
+
+
+Feed the program with a valid input file, where the contents
+where previously encrypted with MD5. Does the program have the
+same behaviour as with the non-encrypted file?
+
+

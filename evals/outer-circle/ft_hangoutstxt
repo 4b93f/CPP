@@ -1,0 +1,102 @@
+0) Preliminary instructions
+
+
+Check the following elements first :
+
+- The project has been completed (in the git)
+- No cheating, both students must be able to explain their codes.
+- The project is coded in JAVA or Kotlin
+
+If you tick off one of these elements, stop your grading right now.
+Use the accurate flag. You're invited to talk about the project, but you
+cannot apply the grading scale.
+
+
+1) Photo
+
+
+You can add a photo in the contact details.
+
+
+2) Creation
+
+
+Check that you can create a contact and that it shows on the application's
+homepage as a list with an abstract (je ne comprends pas tout à fait le sens
+de "résumé" ici, donc j'ai choisi ce terme, mais c'est peut-être summary)
+
+If you click on the contact, details must appear. Created contacts are
+persistent and will be recorded in a local database. (Reminder : you
+shouldn't have used the shared contact table)
+
+
+3) Edition
+
+
+Check that you can properly edit a contact.
+
+
+4) Call me maybe
+
+
+You can call a contact.
+
+
+5) Design
+
+
+This is beautiful. Beauty lies in the eye of the beholder, but if the
+application is little more than white and basic, that might be a good
+start.
+
+
+6) Removal
+
+
+Check that you can delete a contact.
+
+
+7) Bonus libre.
+
+
+Everything you might consider as a bonus.
+
+
+8) Text messages
+
+
+Check that you can text and receive text messages from a contact.
+
+You have a clear conversation history that properly shows the sender and
+the receiver.
+
+
+9) Languages
+
+
+Two languages are available, one as default. For the test, change the
+system's language.
+
+
+10) Mise en arriere plan
+
+
+When you set the application in the background and return to the
+front, the time the application was set in the background must
+show.
+
+
+11) Options
+
+
+You must be able to change the header color through an option menu.
+
+
+12) Graphics
+
+
+The application's icon is the 42 logo.
+
+It works in portrait and landscape mode.
+
+

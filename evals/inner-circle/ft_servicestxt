@@ -1,0 +1,70 @@
+0) Simple preliminaries
+
+- Defense can only happen if the student being evaluated is present. This way everybody progresses: by exchanging ideas and sharing knowledge with each other.
+- Nothing submitted (or wrong file or directory): 0, the evaluation is over.
+- As soon as you come accross an exercise that isn't fully functional, the evaluation stops. The following exercises won't be evaluated.
+- In order to grade your peer, you have to clone their git repository on their station.
+
+
+1) General instructions
+
+- Check if all the necessary configuration files of your application are in the folder srcs.
+- Check if the docker-compose and setup.sh files are at the root of the repository.
+- Execute "setup.sh"
+
+
+2) Services environment
+
+- Run the "setup.sh" file and verify if the application is deployed with all containers.
+- Check with the "docker ps" command if the evaluated has all the different containers. 
+They are nginx, ftps, wordpress, mysql, grafana and influxDB. 
+These containers must have the same name. If this is not the case or if a container is missing, the correction stops.
+
+
+3) Ingress Controller
+
+- Check that redirection to the Nginx server passes by the Ingress Controller. 
+To do that use the ip adress to access the server, and read the Ingress configuration files.
+
+
+4) Nginx
+
+- "Make sure the nginx server redirects on the right sites. Check if the server is open on ports 80 and 443. 
+If not, the correction stops here.
+To test a few redirections, you can test: ipadress:port. As an example, the ports are 8080, 5050, 3000, etc.
+Ask the evaluated to explain his choices and show you his configurations. 
+If Nginx does not work as it should, the correction stops here."
+
+
+5) FTP(s) server
+
+- "Check if the FTPS server is listening on port 21. Make sure it is a FTPS server (s for secure) 
+and not a basic FTP server.
+If the FTPS server does not work as it should, the correction stops here."
+
+
+6) Hello Word(press), MySQL and phpmyadmin
+
+- "Check if the WordPress website works on port 5050. Connect to it using the administrator account 
+and create a few new users. Make sure the new users are added to the database entries.
+For that, you can go to port 5000 to access the phpmyadmin interface and check the database. 
+If it doesn't work, the correction stops here. 
+The database must persist in case of a crash or if you are stopping the container. 
+You can use docker compose to stop the mysql container to test that, and restart it. 
+Check if the database persist. You can also delete the container and ask the evaluated 
+to show you where the database is saved.
+If something does not work as expected, the correction stops here."
+
+
+7) Grafana and InfluxDB
+
+- "Check if grafana is running on port 3000. Connect to the interface. You have to check if grafana 
+is monitoring all containers. To do that search for the dashboard list, click on the dashboards one by one. 
+If something does not work as expected, the correction stops here."
+
+
+8) Hello SSH
+
+- "Check if you have SSH access to the Nginx server. If not, the correction stops here."
+
+

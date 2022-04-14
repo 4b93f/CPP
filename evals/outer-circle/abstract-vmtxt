@@ -1,0 +1,166 @@
+0) Test 1
+
+Run the following program :
+
+\r\n\r\npush int32(42)\r\npush int32(33)\r\nadd
+;poney\r\npush float(44.55)\r\nmul\r\npush double(42.42)\r\n;commentaire
+de ouf\r\npush int32(42)\r\ndump\r\npop\r\nassert double(42.42)\r\nexit\r\n\r\n
+    
+Does the program execute properly?\r\n
+
+
+1) Inputs
+
+The VM must be able to read either from a file or from the standard input
+(with a ;; to end the input)
+
+
+2) Preliminaries tests
+
+
+Check firstly the following elements :
+
+- There is something in the git repository.
+- No cheating (All functions are authorised, the student can explain 
+  the code)
+
+  If an element isn't implemented as explained in the subject, the
+  grading ends. Use the appropriate flag. You're allowed to debate
+  some more.
+
+
+3) Complete verification
+
+The VM is capable of ouputing every error in a file, and doesn't
+stop at the first error met (interpretation excluded).
+
+
+4) Advanced parsing
+
+The parsing is well structured, more specificaly a lexer / parser combo
+with well defined roles as it should be in reality.
+
+
+5) Test 2
+
+
+Run the following program :
+
+\r\n\r\npush int32(32)\r\npush int32(0)\r\ndiv\r\nexit\r\n\r\nDoes
+the program stops properly because of the 0 division?\r\n
+
+
+6) Stack
+
+The VM countains a "stack". It can't be a std::stack except if
+rigorously justified (std::stack isn't iterable, it can at best
+be used as a base class).
+
+
+7) Other bonus
+
+Count in this section the different bonuses. You can grade up to 5
+distinctive bonuses.
+
+Each bonus must be :
+- At the very least useful (up to you)
+- Well implemented and 100% functional
+
+
+8) Test 3
+
+Run the following program:
+  \r\n\r\npush int16(999999999999999999999999999)\r\nexit\r\n\r\n
+  Does the program stops properly because of the overflow error?\r\n"
+
+
+9) Polymorphic operands
+
+Are operand manipulated polymorphicaly through IOperand *.
+If not, the project is off topic. Click on the "crash" flag,
+the grading stops but you're allowed to debate some more.
+
+
+10) Test 4
+
+Run the following program:
+  \r\n\r\npush int16(32 ;)\r\npu int(32))\r\nexit\r\n\r\nDoes
+  the program stops properly because of a syntax error?\r\n"
+
+
+11) Operand factory
+
+
+There must be an operand "factory" implementing the following function:
+IOperand *  SomeClass::createOperand(eOperandType type, const std::string & value);
+
+
+12) Test 5
+
+Run the following program:
+  \r\n\r\npop\r\nexit\r\n\r\n Does the
+  program stops properly because of an empty stack?\r\n"
+
+
+13) Precision management
+
+The VM manages precision in a non trivial way - An if forest or any
+other disgusting thing. An enum is totally acceptable for example.
+
+
+14) Test 6
+
+Run the following program:
+  \r\n\r\npush int32(42)\r\nassert int32(0)\r\nexit\r\n\r\nDoes
+  the program stops properly on an assert error?\r\n"
+
+
+15) Parser
+
+The VM has a clean and clomplete parsing?
+
+
+16) Exceptions
+
+The VM must use exceptions to manage errors.
+
+Select the corresponding grade:
+
+- No exceptions: 0
+- Scalar exceptions (string, char*, int, ...): 1
+- Use of pre-made exceptions (only std::exception ou autre): 2
+- Use of custom exceptions custom inheriting from std::exception: 3
+- Use of custom exceptions custom inheriting from a more specific class than std::exception: 4
+
+
+17) Test 7
+
+Run the following program:
+  \r\n\r\npush int32(42)\r\nadd\r\nexit\r\n\r\n
+  Does the program stops properly on a missing operand?\r\n"
+
+
+18) Test 8
+
+Run the following program:
+  \r\n\r\npush int8(33) ;!\r\npush int8(112)
+  ;p\r\npush int8(111) ;o\r\npush int8(108) ;l\r\npush int8(112) ;p\r\nprint\r\npop\r\nprint\r\npop\r\nprint\r\npop\r\nprint\r\npop\r\nprint\r\npop\r\nexit\r\n\r\n
+  Does the program run properly and display the following output?\r\n\r\np\r\nl\r\no\r\np\r\n!\r\n\r\n"
+
+
+19) Custom test
+
+Run your own tests. For example, run operation with mixed types, really
+big or really small numbers (overflow and underflow excluded).
+
+Does the program run as expected?
+
+
+20) Difficult custom test
+
+Run a really complicated program of your invention (a vicious test
+basically).
+
+Does the program run as expected?
+
+

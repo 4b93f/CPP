@@ -1,0 +1,153 @@
+0) Executable name
+
+Check that the project compiles well (without re-link) when you excute the `make` 
+command and that the executable name is `cub3D`.
+
+
+1) When i'll be older i'll be John Carmack
+
+Look at the subject bonus part and add one point for each bonus
+implemented and fully functionnal.
+
+
+2) And more?
+
+Same as before, but add one point when two more bonuses of 
+the list are well implemented and fully functionnal. Round it 
+up if necessary (9 bonus is 5/5).
+
+
+3) Configuration file
+
+Check that you can configure in the configuration file in accordance with the format described
+in the subject ALL the following elements.
+
+  - the image resolution/window size - R
+  - north texture path - NO
+  - east texture path - EA
+  - south texture path - SO
+  - west texture path - WE
+  - sprite texture path - S
+  - floor color - F
+  - ceilling color - C
+  - the map (cf. subject for the map configuration details)  
+
+Check also that the program return an error and exit properly when
+the configuration file is misconfigured (for example an unknow key, a uniq key set twice,
+an invalid path..) or not finishing with the `.cub` extension.
+
+If not, defence is over and the final grade will be 0.
+
+
+4) Display's technical component
+
+We're going to evaluate display's technical elements. Run the
+program and execute the 5 following tests. If at least one
+fails, this means that no points will be awarded for this
+section. Move to the next one.
+
+  - A windows must open at the launch of the program if the `--save` argument is not supplied. 
+    It must stay open during the whole execution and has the resolution set in the configuration file.
+
+  - An image representing the inside of a maze must be displayed inside the window.
+
+  - When the arguemnt `--save` is supplied, the program won't open a window but output a file in bmp format
+    of the configuration file defined resolution (R key).
+
+  - Hide all or part of the window either by using another window
+    or by using the screen's borders, then minimize the windows
+    and maximize it back. In all cases the content of the window
+    must remain consistent.
+
+  - Set a resolution (R key) in the config file greater than the actual screen size resolution.
+    The program must resize the window to fit the screen resolution.
+
+
+5) User basic events
+
+In this section we're going to evaluate the program's user
+generated events. Execute the 3 following tests. If at least one
+fails, this means that no points will be awarded for this section.
+Move to the next one.
+
+  - Click the red cross at the top left of the window. The
+    window must close and the program must exit cleanly.
+
+  - Press the ESC key. The window must close and the program
+    must exit cleanly. In the case of this test, we will accept
+    that another key exits the program, for example Q.
+
+  - Press the four arrow keys (we'll accept WASD or ZQSD keys)
+    in the order of your liking. Each keypress must render a
+    visible result on the window, such as a player's movement/rotation.
+
+
+6) Movements
+
+In this section we'll evaluate player's movement/orientation inside the maze
+implementation. Execute the 4 following tests. If at least one
+fails, this means that no points will be awarded for this section.
+Move to the next one.
+  
+  - The player's spawning orientation on the first image must be in accordance
+    with the configutation file, test for each cardinal orientations (N, S, E, W).
+
+  - Press the left arrow (or A or Q) then the right arrow
+    (or D). The player's view must rotate to the left
+    then to the right as if the player’s head was moving.
+
+  - Press the up arrow (or W or Z) then the down arrow (or S).
+    The player's view must go forward and then backward in a
+    straight line.
+
+  - During those four movements, was the display smooth? By
+    smooth we mean is the game "playable" or is it slow.
+
+
+7) Walls & Sprites
+
+
+In this section we'll evaluate the walls and sprites implementation in the maze. 
+Execute the 5 following tests. If at least one
+fails, this means that no points will be awarded for this section.
+Move to the next one.
+
+- The walls texture vary depending on which compass point the wall is facing
+(north, south, east, west).
+Check that the textures on the walls and perspective are
+clearly visible and correct.
+
+- Check that modify the path of a wall texture or of the sprite image in the configuration file
+  modify the rendered texture or the sprite when the program is re-executed.
+
+- Check also that set an unexisting path raise an error.
+
+- Check that the sprite is well displayed and can be present multiple times in the same map.
+
+- Check that the floor and ceilling colors are well handled by modify them in the configutation file.
+
+
+8) Error management
+
+In this section, we’ll evaluate the the program's error management
+and reliability. Execute the 4 following tests. If at least one
+fails, this means that no points will be awarded for this section.
+Move to the next one.
+
+  - Run the program using numerous arguments and random values.
+    Even if the program doesn't require any arguments, it is
+    critical that those arguments don’t alternate or create
+    unhandled errors.
+
+  - Check that there is no memory leaks. You can use the
+    `top` or `leaks` command in another shell to monitor that the memory
+    use is stable. The memory used must not increase each time an
+    action is made.
+
+  - Roll either your arm or your face on the keyboard. The program
+    must not show any strange behaviors and it must stay functional.
+
+  - Modify the map. The program must not show any strange behaviors
+    and it must stay functional if the map is well configured, if not it must raise an error. 
+
+

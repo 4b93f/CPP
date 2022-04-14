@@ -1,0 +1,89 @@
+0) option -c
+
+The option -c works ? Test the command ./ft_strace -c --
+/bin/ls -R /usr The output looks like the reference strace?
+
+
+1) strace test_1
+
+
+Test ft_strace on test_1 binary. The output looks
+like the reference strace?
+
+
+2) Preliminary tests
+
+
+First check the following elements :
+
+- There is a rendering (in the git repository)
+
+- The Makefile is present and compiles the ft_strace executable correctly
+
+- No cheating (authorized functions, the student can explain
+  his code, ...)
+
+- Check if the executable supports 64-bit AND 32-bit binaries
+
+Verify that before the call of wait4 or waitpid if there is
+
+- sigprocmask(SIG_SETMASK, &empty, NULL) where empty is a
+  sigset_t which has been set to zero with sigemptyset; and
+  that after the call you disable the interrupt with
+- sigprocmask(SIG_BLOCK, &blocked, NULL) where blocked is a
+  sigset_t that blocks SIGHUP, SIGINT, SIGQUIT, SIGPIPE, SIGTERM
+
+  If one of these elements does not conform, the rating stops there.
+  You are encouraged to continue discussing the project,
+  but the scale is not applied.
+
+
+3) strace test_2
+
+
+Test ft_strace on test_2 binary. The output looks
+like the reference strace?
+
+
+4) PATH management
+
+
+It's works ? Test the command ./ft_strace ls -l
+
+
+5) strace test_3
+
+
+Do a $> dd if=/dev/urandom of=/tmp/delmen bs=1K count=10
+before launch the test. Test ft_strace on test_3 binary.
+The output looks like the reference strace?
+
+
+6) strace test_4
+
+
+Test ft_strace on test_4 binary. The output looks
+like the reference strace?
+
+
+7) strace test_5
+
+Test ft_strace on test_5 binary. The output looks
+like the reference strace?
+
+
+8) strace formatting
+
+For this question you must be careful about the number of
+system calls and their parameters. Test the command
+'ft_strace /bin/cat' then ctrl-D. The output looks
+like the reference strace?
+
+
+9) final strace
+
+
+Test the command 'ft_strace /bin/bash', do a 'cat'
+<enter>, crtl-D, exit. The output looks like the reference strace?
+
+

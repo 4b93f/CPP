@@ -1,0 +1,144 @@
+0) SQL injection basic
+
+
+Explain the basic functionning of the breach. Compare and demonstrate
+that both flags are identical.
+
+
+1) XSS understanding
+
+
+Along with a demonstration to avoid this kind of problem, an advanced
+explanation will be required here. Explain the impact this specific breach
+may cause.
+
+
+2) SQL understanding
+
+
+Along with a demonstration to avoid this kind of problem, an advanced
+explanation will be required here. Explain the impact this specific breach
+may cause.
+
+
+3) SQL injection avancee
+
+
+Explain the basic functionning of the breach. Compare and demonstrate
+that both flags are identical.
+
+
+4) Redirect understanding
+
+
+Along with a demonstration to avoid this kind of problem, an advanced
+explanation will be required here. Explain the impact this specific breach
+may cause.
+
+
+5) Include
+
+
+Explain the basic functionning of the breach. Explain a method that could
+have avoided this kind of problem. Explain the impact this specific breach
+may cause. Compare and demonstrate that both flags are identical.
+
+
+6) Bruteforce understanding
+
+
+Along with a demonstration to avoid this kind of problem, an advanced
+explanation will be required here. Explain the impact this specific breach
+may cause.
+
+
+7) XSS basic
+
+
+Explain the basic functionning of the breach. Compare and demonstrate
+that both flags are identical.
+
+
+8) robots.txt understanding
+
+
+Along with a demonstration to avoid this kind of problem, an advanced
+explanation will be required here. Explain the impact this specific breach
+may cause.
+
+
+9) XSS advanced
+
+
+Explain the basic functionning of the breach. Compare and demonstrate
+that both flags are identical.
+
+
+10) Cookies
+
+
+Explain the basic functionning of the breach. Explain a method that could
+have avoided this kind of problem. Explain the impact this specific breach
+may cause. Compare and demonstrate that both flags are identical.
+
+
+11) Spoof (curl)
+
+
+Explain the basic functionning of the breach. Explain a method that could
+have avoided this kind of problem. Explain the benefit of this breach.
+Compare and demonstrate that both flags are identical.
+
+
+12) Admin (htpasswd)
+
+
+Explain the method used to find the breach and the potential problem.
+Compare and demonstrate that both flags are identical.
+
+
+13) Bruteforce (member)
+
+
+Explain the technique used for the discovery. Explain a method that could
+have avoided this kind of problem. Explain the benefit of this breach.
+Compare and demonstrate that both flags are identical.
+
+
+14) File upload
+
+
+Explain the basic functionning of the breach. Explain a method that could
+have avoided this kind of problem. Explain the impact this specific breach
+may cause. Compare and demonstrate that both flags are identical.
+
+
+15) Redirect
+
+
+Explain the basic functionning of the breach. Compare and demonstrate
+that both flags are identical.
+
+
+16) Guess (hidden file)
+
+
+Explain the research logic. Explain the benefit of this breach. Compare
+and demonstrate that both flags are identical.
+
+
+17) Survey
+
+
+Explain the technique used for the discovery. Explain the impact this
+specific breach may cause. Compare and demonstrate that both flags are
+identical.
+
+
+18) Recover
+
+
+Explain the basic functionning of the breach. Compare and demonstrate
+that both flags are identical.
+
+

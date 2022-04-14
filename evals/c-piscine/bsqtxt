@@ -1,0 +1,80 @@
+0) Test 00
+
+Une map de 1x1 que l'on peut remplir.
+
+
+1) Préliminaires simples
+
+- Le groupe n'est pas complet, 0, la notation est terminée.
+- Pas de rendu ou mauvais répertoire de rendu, 0, la notation est terminée.
+- Le rendu ne doit utiliser que des choses vues en piscine (Pas de C99, etc), sinon 0, la soutenance est terminée.
+- Le rendu doit posséder un fichier auteur a la racine avec le bon format (voir sujet), sinon 0, soutenance est terminée.
+- Un Makefile présent dans le rendu doit pouvoir compiler le projet, sinon 0, soutenance est terminée.
+
+La Norme :
+- Vérifiez la Norme, la norminette faisant foi. S'il y a la moindre faute de norme, la soutenance s'arrête immédiatement.
+
+
+2) Test 01
+
+Une map de 1x1 que l'on ne peut pas remplir.
+
+
+3) Pré-requis du sujet
+
+Si l'une de ces conditions n'est pas remplie, le groupe a 0, la soutenance s'arrête immédiatement. Soyez intransigeants, la moulinette le sera aussi.
+
+- Vérifiez que le Makefile se trouve à la racine du dépôt. Pas dans ex00/, rendu/, ou autres bizarreries.
+- Testez de compiler avec (toujours à la racine du dépôt) 'make clean && make && make fclean && make && make clean && ls -la ./bsq && echo OK'. Cela doit afficher OK à la fin, et vous devez avoir dans le répertoire courant un éxécutable nommé "bsq".
+- Vérifiez que le programme fonctionne avec 1 à N fichiers passés en argument (Testez avec des maps vides de 1x1 par exemple)
+- Vérifiez que le programme peut ne prendre aucun argument et lire une map depuis l'entrée standard (./bsq < map, ou cat map | ./bsq)
+- Vérifiez que le programme détecte correctement les erreurs dans l'en-tête de la map, ainsi que dans la map elle-même, et affiche exactement la bonne sortie en cas d'erreur.
+
+Si tout cela fonctionne correctement, alors passez à la suite de la notation.
+
+
+4) Test 02
+
+Une map de 5x5.
+
+
+5) Test 03
+
+Une map échiquier (8x8 1 sur 2 obstacles en diagonale), le caractere plein est bien le plus haut puis le plus à gauche.
+
+
+6) Test 04
+
+Une map de 10x10.
+
+
+7) Test 05
+
+Une map de 10x10 avec un charset autre que .oX (Par exemple 123).
+
+
+8) Test 06
+
+Une map de 100x100.
+
+
+9) Test 07
+
+Une map de 100x100 avec que des obstacles.
+
+
+10) Test 08
+
+Une map de 100x100 avec que des vides.
+
+
+11) Test 09
+
+Une map de 100x100 avec plusieurs grosses solutions (au moins 5x5 la solution), toujours celle du haut puis gauche qui est choisie.
+
+
+12) Test 10
+
+Une map de 1000x1000.
+
+

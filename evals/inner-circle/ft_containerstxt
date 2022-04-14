@@ -1,0 +1,54 @@
+0) List
+
+Make sure that each member function, overload and non-member overload is present and works as expected.
+Use the standard library container to check that everything works the same way.
+
+
+1) Deque
+
+Make sure that each member function, overload and non-member overload is present and works as expected.
+Use the standard library container to check that everything works the same way.
+
+
+2) Set
+
+Make sure that each member function, overload and non-member overload is present and works as expected.
+Use the standard library container to check that everything works the same way.
+
+
+3) Vector
+
+Make sure that each member function, overload and iterator is present and works as expected.
+Use the standard library container to check that everything works the same way.
+
+
+4) Multimap
+
+Make sure that each member function, overload and non-member overload is present and works as expected.
+Use the standard library container to check that everything works the same way.
+
+
+5) Map
+
+Make sure that each member function, overload and iterator is present and works as expected.
+Use the standard library container to check that everything works the same way.
+
+
+6) Multiset
+
+Make sure that each member function, overload and non-member overload is present and works as expected.
+Use the standard library container to check that everything works the same way.
+
+
+7) Queue
+
+Make sure that each member function, overload and non-member overload is present and works as expected.
+Use the standard library container to check that everything works the same way.
+
+
+8) Stack
+
+Make sure that each member function, overload and non-member overload is present and works as expected.
+Use the standard library container to check that everything works the same way.
+
+
