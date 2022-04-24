@@ -6,7 +6,7 @@
 /*   By: shyrno <shyrno@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/15 22:39:16 by shyrno            #+#    #+#             */
-/*   Updated: 2021/10/24 05:02:16 by shyrno           ###   ########.fr       */
+/*   Updated: 2022/04/23 02:47:04 by shyrno           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ ScavTrap::ScavTrap(std::string name): ClapTrap()
 	std::cout << ", but my friends call me ScavTrap!>" << std::endl;
 }
 
-ScavTrap::ScavTrap(ScavTrap & copy): ClapTrap()
+ScavTrap::ScavTrap(ScavTrap & copy)
 {
 	std::cout << "Copy constructor called" << std::endl;
 	*this = copy;
@@ -40,12 +40,23 @@ ScavTrap::ScavTrap(ScavTrap & copy): ClapTrap()
 
 ScavTrap::~ScavTrap(void)
 {
-	std::cout <<"ScavTrap Destructor called : <Wait ? am i dead ? No waaaay!>" << std::endl;
+	std::cout <<"ScavTrap Destructor called : <Goodnight girl, I'll see ya tomorrow :)>" << std::endl;
 }
 
 void ScavTrap::guardGate(void)
 {
     std::cout <<"Gate Keepper mode activated !" << std::endl;
+}
+
+void ScavTrap::attack(const std::string & target)
+{
+	if (Energy_points == 0)
+		std::cout << "No energy left, try again :)" << std::endl;
+	else
+	{
+		std::cout << "<Emotional daaaamage !!! (" << this->Name << " attack "<< target << ", dealing " << this->attack_damage  << " damage)>" <<std::endl;
+		Energy_points--;
+	}
 }
 
 ScavTrap & ScavTrap::operator=(const ScavTrap & rhs)

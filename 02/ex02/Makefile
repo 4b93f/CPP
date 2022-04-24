@@ -1,14 +1,14 @@
 NAME		= Harcore_Fixed
 SRC			= main.cpp Fixed.cpp
 OBJS		= $(SRC:.cpp=.o)
-CC			= clang++
+CXX			= clang++
 RM			= rm -f
-FLAGS	= -Wall -Wextra -Werror -std=c++98 -I .
+CXXFLAGS	= -Wall -Wextra -Werror -std=c++98 -I .
 
 all:		$(NAME)
 
 $(NAME):	$(OBJS)
-			$(CC) $(FLAGS) -o $(NAME) $(OBJS)
+			$(CXX) $(CXXFLAGS) -o $(NAME) $(OBJS)
 
 clean:
 			@$(RM) $(OBJS)

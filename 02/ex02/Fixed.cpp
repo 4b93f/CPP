@@ -6,7 +6,7 @@
 /*   By: shyrno <shyrno@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/15 03:25:11 by shyrno            #+#    #+#             */
-/*   Updated: 2022/04/02 02:30:38 by shyrno           ###   ########.fr       */
+/*   Updated: 2022/04/23 03:08:15 by shyrno           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,64 +69,64 @@ std::ostream & operator<<(std::ostream & o, Fixed const & rhs)
     return o;
 }
 
-bool Fixed::operator>(const Fixed & rhs)
+bool Fixed::operator>(const Fixed & rhs) const
 {
     if (this->toFloat() - rhs.toFloat() > 0)
         return true;
     return false;
 }
 
-bool Fixed::operator<(const Fixed & rhs)
+bool Fixed::operator<(const Fixed & rhs) const
 {
     if (this->toFloat() - rhs.toFloat() < 0)
         return true;
     return false;
 }
 
-bool Fixed::operator==(const Fixed & rhs)
+bool Fixed::operator==(const Fixed & rhs) const
 {
     if (this->toFloat() - rhs.toFloat() == 0)
         return true;
     return false ;
 }
 
-bool Fixed::operator>=(const Fixed & rhs)
+bool Fixed::operator>=(const Fixed & rhs) const
 {
     if (this->toFloat() - rhs.toFloat() >= 0)
         return true;
     return false ;
 }
 
-bool Fixed::operator<=(const Fixed & rhs)
+bool Fixed::operator<=(const Fixed & rhs) const
 {
     if (this->toFloat() - rhs.toFloat() <= 0)
         return true;
     return false ;
 }
 
-bool Fixed::operator !=(const Fixed & rhs)
+bool Fixed::operator!=(const Fixed & rhs) const
 {
     if (this->toFloat() - rhs.toFloat() != 0)
         return true;
     return false ;
 }
 
-Fixed Fixed::operator+(const Fixed & rhs)
+Fixed Fixed::operator+(const Fixed & rhs) const
 {
     return Fixed(this->toFloat() + rhs.toFloat());
 }
 
-Fixed Fixed::operator-(const Fixed & rhs)
+Fixed Fixed::operator-(const Fixed & rhs) const
 {
     return Fixed(this->toFloat() - rhs.toFloat());
 }
 
-Fixed Fixed::operator*(const Fixed & rhs)
+Fixed Fixed::operator*(const Fixed & rhs) const
 {
     return Fixed(this->toFloat() * rhs.toFloat());
 }
 
-Fixed Fixed::operator/(const Fixed & rhs)
+Fixed Fixed::operator/(const Fixed & rhs) const
 {
     return Fixed(this->toFloat() / rhs.toFloat());
 }
@@ -156,32 +156,3 @@ Fixed Fixed::operator--(int)
     this->fixed_point--;
     return (old);
 }
-
-static Fixed &min(Fixed &rhf, Fixed &rhs)
-{
-    if (rhf < rhs)
-        return rhf;
-    return (rhs);
-}
-
-static const Fixed & min(const Fixed & rhf, const Fixed & rhs)
-{
-    if (rhf < rhs)
-        return (rhf);
-    return rhs;
-}
-
-static Fixed & max(Fixed &rhf, Fixed &rhs)
-{
-    if (rhf < rhs)
-        return rhf;
-    return (rhs);
-}
-
-static const Fixed & max(const Fixed & rhf, const Fixed & rhs)
-{
-    if (rhf < rhs)
-        return (rhf);
-    return rhs;
-}
-

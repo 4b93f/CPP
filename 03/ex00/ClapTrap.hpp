@@ -6,7 +6,7 @@
 /*   By: shyrno <shyrno@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/17 23:04:54 by chly-huc          #+#    #+#             */
-/*   Updated: 2021/10/24 04:57:48 by shyrno           ###   ########.fr       */
+/*   Updated: 2022/04/23 03:01:29 by shyrno           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ class ClapTrap
 		void attack(const std::string & target);
 		void takeDamage(unsigned int amount);
 		void beRepaired(unsigned int amount);
-		void print_stat(void);
+		// void print_stat(void);
 		ClapTrap & operator=(const ClapTrap & rhs);
 	private:
 		std::string Name;

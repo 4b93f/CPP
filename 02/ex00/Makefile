@@ -8,7 +8,7 @@ CXXFLAGS	= -Wall -Wextra -Werror -std=c++98 -I .
 all:		$(NAME)
 
 %.o: %.c
-			$(CPP) $(CPPFLAGS) -c $< -o $@
+			$(CXX) $(CXXFLAGS) -c $< -o $@
 
 $(NAME):	$(OBJS)
 			$(CXX) $(CXXFLAGS) -o $(NAME) $(OBJS)

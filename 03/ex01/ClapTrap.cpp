@@ -6,7 +6,7 @@
 /*   By: shyrno <shyrno@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/17 23:15:47 by chly-huc          #+#    #+#             */
-/*   Updated: 2021/10/24 05:03:55 by shyrno           ###   ########.fr       */
+/*   Updated: 2022/04/23 02:48:13 by shyrno           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,26 +36,33 @@ ClapTrap::~ClapTrap(void)
 
 void ClapTrap::attack(const std::string & target)
 {
-	std::cout << "" << std::endl;
+	if (Energy_points == 0)
+		std::cout << "No energy left, try again :)" << std::endl;
+	else
+	{
+		std::cout << "<Take this ! Mwahahaha !!! (" << this->Name << " attack "<< target << ", dealing " << this->attack_damage  << " damage)>" <<std::endl;
+		Energy_points--;
+	}
 }
 
 void ClapTrap::takeDamage(unsigned int amount)
 {
-	std::cout << "<That looks like it hurts! (" << amount << " damage taken)>" << std::endl;
+	std::cout << "<That looks like it hurts! (" << this->Name << " took " << amount << " damage)>" << std::endl;
 	Hitpoints -= amount;
+	if (Hitpoints < 0)
+		Hitpoints = 0;
 }
 
 void ClapTrap::beRepaired(unsigned int amount)
 {
-	Hitpoints += amount;
-	std::cout << "<Hell ya, Health over here! (" << Name << " got heal by " << amount << ")>" << std::endl;
-}
-
-void ClapTrap::print_stat(void)
-{
-	std::cout << "HP : " << this->Hitpoints << std::endl;
-	std::cout << "ATK DMG : " << this->attack_damage << std::endl;
-	std::cout << "ENERGY POINT : " << this->Energy_points << std::endl;
+	if (Energy_points == 0)
+		std::cout << "No energy left, try again :)" << std::endl;
+	else
+	{
+		Hitpoints += amount;
+		std::cout << "<Hell ya, Health over here! (" << Name << " got heal by " << amount << ")>" << std::endl;
+		Energy_points--;
+	}
 }
 
 ClapTrap & ClapTrap::operator=(const ClapTrap & rhs)
@@ -66,3 +73,11 @@ ClapTrap & ClapTrap::operator=(const ClapTrap & rhs)
 	this->Energy_points = rhs.Energy_points;
 	return *this;
 }
+
+// void ClapTrap::print_stat(void)
+// {
+// 	std::cout << Name << std::endl;
+// 	std::cout << "HP : " << this->Hitpoints << std::endl;
+// 	std::cout << "ATK DMG : " << this->attack_damage << std::endl;
+// 	std::cout << "ENERGY POINT : " << this->Energy_points << std::endl;
+// }
