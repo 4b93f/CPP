@@ -1,7 +1,7 @@
 NAME		= Materia
-SRC			= main.cpp AMateria.cpp IMateriaSouurce.cpp ICharacter.cpp
+SRC			= main.cpp AMateria.cpp IMateriaSource.cpp ICharacter.cpp
 OBJS		= $(SRC:.cpp=.o)
-CC			= clang++
+CC			= c++
 RM			= rm -f
 FLAGS	= -Wall -Wextra -Werror -std=c++98 -I .
 

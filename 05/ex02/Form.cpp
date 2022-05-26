@@ -14,7 +14,7 @@
 
 Form::Form(void): name("Blank"), execGrade(150), signGrade(150)
 {
-    bool sign = false;
+    this->sign = false;
     std::cout << "Form Default constructor called" << std::endl;
 }
 

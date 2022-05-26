@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: shyrno <shyrno@student.42.fr>              +#+  +:+       +#+        */
+/*   By: chly-huc <chly-huc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/15 03:18:28 by shyrno            #+#    #+#             */
-/*   Updated: 2021/10/24 04:42:01 by shyrno           ###   ########.fr       */
+/*   Updated: 2022/04/24 18:24:15 by chly-huc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FIXED_HPP
-# define FIXED_HPP
-# include "iostream"
-# include "string"
+#define FIXED_HPP
+#include "iostream"
+#include "string"
 
 class Fixed
 {

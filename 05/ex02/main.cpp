@@ -20,6 +20,8 @@
 int main (void)
 {
     RobotomyRequestForm hey;
+    ShrubberyCreationForm shrub;
+    PresidentialPardonForm President;
     Bureaucrat human("Charli", 100);
 
     human.signForm(hey);
@@ -38,4 +40,18 @@ int main (void)
 
     human_three.signForm(hey);
     human_three.exec(hey);
+    std::cout << std::endl << "Test four" << std::endl << std::endl;
+
+    Bureaucrat human_four("you", 138);
+    Bureaucrat human_four_bis("no_you", 10);
+
+    human_four.signForm(shrub);
+    human_four.exec(shrub);
+    human_four_bis.exec(shrub);
+    std::cout << std::endl << "Test five" << std::endl << std::endl;
+
+    Bureaucrat human_five("five", 2);
+
+    human_five.signForm(President);
+    human_five.exec(President);
 }

@@ -32,7 +32,6 @@ int main (void)
         
         std::cout << charli << std::endl;
         charli.decGrade();
-        std::cout << charli << std::endl;
     }
     catch(const std::exception& e)
     {
@@ -44,7 +43,6 @@ int main (void)
         Bureaucrat charli("Franky", 150);
         std::cout << charli << std::endl;
         charli.incGrade();
-        std::cout << charli << std::endl;
     }
     catch(const std::exception& e)
     {

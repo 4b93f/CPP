@@ -14,8 +14,8 @@
 
 Form::Form(void): name("Blank"), execGrade(150), signGrade(150)
 {
-    bool sign = false;
     std::cout << "Form Default constructor called" << std::endl;
+    this->sign = false;
 }
 
 Form::Form(std::string name, int execGrade, int signGrade): name(name), execGrade(execGrade), signGrade(signGrade)
@@ -34,7 +34,6 @@ Form::Form(std::string name, int execGrade, int signGrade): name(name), execGrad
 
 Form::Form(Form & copy): name("Blank"), execGrade(150), signGrade(150), sign(false)
 {
-    
     *this = copy;
     std::cout << "Form Copy constructor called" << std::endl;
 }

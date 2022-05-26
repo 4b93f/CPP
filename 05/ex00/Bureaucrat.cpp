@@ -20,12 +20,12 @@ Bureaucrat::Bureaucrat(void): name("Blank")
 
 Bureaucrat::Bureaucrat(std::string name, int grade): name(name)
 {
+    std::cout << "Bureaucrat Paramectric constructor called"<< std::endl;
     if (grade > 150)
         throw(GradeTooLowException());
     if (grade < 1)
         throw(GradeTooHighException());
     this->grade = grade;
-    std::cout << "Bureaucrat Paramectric constructor called"<< std::endl;
 }
 
 Bureaucrat::Bureaucrat(Bureaucrat & copy) 

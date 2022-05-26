@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: shyrno <shyrno@student.42.fr>              +#+  +:+       +#+        */
+/*   By: chly-huc <chly-huc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 01:23:57 by shyrno            #+#    #+#             */
-/*   Updated: 2021/11/08 20:47:28 by shyrno           ###   ########.fr       */
+/*   Updated: 2022/05/24 19:11:56 by chly-huc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,7 @@ int main()
 	std::cout << "Deep copy test" << std::endl << std::endl;
 	const Cat old_cat;
 	const Cat new_cat = old_cat;
+	
 	Dog original;
 	{
 		Dog copy = original;

@@ -1,7 +1,7 @@
 NAME		= Animal
 SRC			= Cat.cpp main.cpp Dog.cpp Animal.cpp WrongAnimal.cpp WrongCat.cpp
 OBJS		= $(SRC:.cpp=.o)
-CPP			= clang++
+CPP			= c++
 RM			= rm -f
 CPPFLAGS	= -Wall -Wextra -Werror -std=c++98 -I .
 

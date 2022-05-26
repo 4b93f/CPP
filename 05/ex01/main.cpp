@@ -28,9 +28,9 @@ int main (void)
     { 
         std::cout << "easy needs grade " << easy.getExecGrade() << " to be executed and grade " << easy.getSignGrade() << " to be signed (at least)." << std::endl;
         std::cout << "good worker sign grade = " << good_worker.getGrade() << std::endl;
-        std::cout << "Signed state of easy is : " << easy.getSign() << std::endl;
+        std::cout << "Signed state of easy before : " << easy.getSign() << std::endl;
         easy.beSigned(good_worker);
-        std::cout << "Signed state of easy is : " << easy.getSign() << std::endl;
+        std::cout << "Signed state of easy after : " << easy.getSign() << std::endl;
     }
     catch(const std::exception& e)
     {
@@ -71,5 +71,4 @@ int main (void)
     
     test.signForm(possible);
     test.signForm(impossible);
-
 }

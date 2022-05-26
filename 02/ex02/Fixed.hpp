@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: shyrno <shyrno@student.42.fr>              +#+  +:+       +#+        */
+/*   By: chly-huc <chly-huc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/15 03:18:28 by shyrno            #+#    #+#             */
-/*   Updated: 2022/04/23 03:08:36 by shyrno           ###   ########.fr       */
+/*   Updated: 2022/04/24 18:37:16 by chly-huc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FIXED_HPP
-# define FIXED_HPP
-# include "iostream"
-# include "string"
-# include "math.h"
+#define FIXED_HPP
+#include "iostream"
+#include "string"
+#include "math.h"
 
 class Fixed
 {
@@ -41,7 +41,7 @@ class Fixed
         Fixed & operator--(void);
         Fixed operator++(int);
         Fixed operator--(int);
-        static Fixed &min(Fixed &rhf, Fixed &rhs)
+        static Fixed & min(Fixed &rhf, Fixed &rhs)
         {
             if (rhf < rhs)
                 return rhf;

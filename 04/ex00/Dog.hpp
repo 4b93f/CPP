@@ -3,17 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: shyrno <shyrno@student.42.fr>              +#+  +:+       +#+        */
+/*   By: chly-huc <chly-huc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 01:21:53 by shyrno            #+#    #+#             */
-/*   Updated: 2021/11/08 23:58:34 by shyrno           ###   ########.fr       */
+/*   Updated: 2022/05/24 18:42:50 by chly-huc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
-
-#include "iostream"
-#include "string"
 #include "Animal.hpp"
 
 class Dog : public Animal

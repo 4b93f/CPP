@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   WrongAnimal.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: shyrno <shyrno@student.42.fr>              +#+  +:+       +#+        */
+/*   By: chly-huc <chly-huc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 02:03:25 by shyrno            #+#    #+#             */
-/*   Updated: 2021/11/08 23:58:34 by shyrno           ###   ########.fr       */
+/*   Updated: 2022/05/24 19:04:49 by chly-huc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,16 @@ WrongAnimal::WrongAnimal(void)
     std::cout << "WrongAnimal Default constructor called" << std::endl;
 }
 
-WrongAnimal::WrongAnimal(WrongAnimal & copy) 
+WrongAnimal::WrongAnimal(WrongAnimal const & copy) 
 {  
     *this = copy;
     std::cout << "WrongAnimal Copy constructor called" << std::endl;
+}
+
+WrongAnimal & WrongAnimal::operator=(const WrongAnimal & rhs) 
+{
+    (void)rhs;
+    return *this;
 }
 
 WrongAnimal::~WrongAnimal(void) 
@@ -29,11 +35,6 @@ WrongAnimal::~WrongAnimal(void)
     std::cout << "WrongAnimal Destructor called" << std::endl;    
 }
 
-WrongAnimal & WrongAnimal::operator=(const WrongAnimal & rhs) 
-{
-    this->type = rhs.type;
-    return *this;
-}
 
 void WrongAnimal::makeSound(void) const
 {

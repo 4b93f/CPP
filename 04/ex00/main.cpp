@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: shyrno <shyrno@student.42.fr>              +#+  +:+       +#+        */
+/*   By: chly-huc <chly-huc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/18 01:23:57 by shyrno            #+#    #+#             */
-/*   Updated: 2021/10/28 17:39:11 by shyrno           ###   ########.fr       */
+/*   Updated: 2022/05/24 19:06:27 by chly-huc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,15 +19,19 @@
 int main()
 {
     const Animal* meta = new Animal();
-    const Animal* j = new Dog();
-    const Animal* i = new Cat();
+    const Animal* dog = new Dog();
+    const Animal* cat = new Cat();
     const WrongAnimal* Wrong = new WrongCat();
-    std::cout << j->getType() << " " << std::endl;
-    std::cout << i->getType() << " " << std::endl;
-    i->makeSound(); //will output the cat sound!
-    j->makeSound();
+    std::cout << dog->getType() << " " << std::endl;
+    std::cout << cat->getType() << " " << std::endl;
+    cat->makeSound(); //will output the cat sound!
+    dog->makeSound();
     meta->makeSound();
+    std::cout << Wrong->getType() << std::endl;
     Wrong->makeSound();
-    delete j;
+    delete dog;
+    delete meta;
+    delete Wrong;
+    delete cat;
     return 0;
 }

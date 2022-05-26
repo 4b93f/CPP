@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: shyrno <shyrno@student.42.fr>              +#+  +:+       +#+        */
+/*   By: chly-huc <chly-huc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/15 03:25:11 by shyrno            #+#    #+#             */
-/*   Updated: 2021/10/24 04:42:42 by shyrno           ###   ########.fr       */
+/*   Updated: 2022/04/24 18:31:15 by chly-huc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ void Fixed::setRawBits(const int raw)
 
 int Fixed::toInt(void) const
 {
-    return (roundf(this->fixed_point >> this ->raw_bits));
+    return (roundf(this->fixed_point >> this->raw_bits));
 }
 
 float Fixed::toFloat(void) const
