@@ -1,5 +1,5 @@
-NAME		= Templates
-SRC			= main.cpp
+NAME		= Intern-kun
+SRC			= main.cpp Bureaucrat.cpp Form.cpp PresidentialPardonForm.cpp RobotomyRequestForm.cpp ShrubberyCreationForm.cpp Intern.cpp
 OBJS		= $(SRC:.cpp=.o)
 CC			= c++
 RM			= rm -f

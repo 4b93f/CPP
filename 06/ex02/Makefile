@@ -1,5 +1,5 @@
-NAME		= Materia
-SRC			= main.cpp AMateria.cpp IMateriaSource.cpp ICharacter.cpp
+NAME		= Base
+SRC			= main.cpp Base.cpp
 OBJS		= $(SRC:.cpp=.o)
 CC			= c++
 RM			= rm -f

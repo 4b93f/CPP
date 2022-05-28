@@ -1,7 +1,7 @@
 NAME		= Convert
 SRC			= main.cpp convert.cpp
 OBJS		= $(SRC:.cpp=.o)
-CXX			= clang++
+CXX			= c++
 RM			= rm -f
 CXXFLAGS	= -Wall -Wextra -Werror -std=c++98 -I .
 

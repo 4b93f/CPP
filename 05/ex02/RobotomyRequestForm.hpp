@@ -3,13 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   RobotomyRequestForm.hpp                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: shyrno <shyrno@student.42.fr>              +#+  +:+       +#+        */
+/*   By: chly-huc <chly-huc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/22 00:55:55 by shyrno            #+#    #+#             */
-/*   Updated: 2021/10/25 00:43:58 by shyrno           ###   ########.fr       */
+/*   Updated: 2022/05/28 16:09:29 by chly-huc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef ROBOTOMYREQUESTFORM_HPP
+#define ROBOTOMYREQUESTFORM_HPP
 #include "Bureaucrat.hpp"
 
 class RobotomyRequestForm : public Form
@@ -24,3 +26,5 @@ class RobotomyRequestForm : public Form
     private:
         std::string target;
 };
+
+#endif

@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   PresidentialPardonForm.cpp                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chly-huc <chly-huc@student.42.fr>          +#+  +:+       +#+        */
+/*   By: shyrno <shyrno@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/22 01:06:08 by shyrno            #+#    #+#             */
-/*   Updated: 2022/05/28 16:08:56 by chly-huc         ###   ########.fr       */
+/*   Updated: 2021/10/25 00:44:22 by shyrno           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "PresidentialPardonForm.hpp"
 

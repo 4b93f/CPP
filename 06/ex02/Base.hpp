@@ -1,27 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   IMateriaSource.hpp                                 :+:      :+:    :+:   */
+/*   base.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: shyrno <shyrno@student.42.fr>              +#+  +:+       +#+        */
+/*   By: chly-huc <chly-huc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/18 03:34:54 by shyrno            #+#    #+#             */
-/*   Updated: 2021/10/18 03:36:23 by shyrno           ###   ########.fr       */
+/*   Created: 2022/05/28 17:32:08 by chly-huc          #+#    #+#             */
+/*   Updated: 2022/05/28 18:35:25 by chly-huc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef IMATERIASOURCE_HPP
-# define IMATERIASOURCE_HPP
+#ifndef BASE_HPP
+#define BASE_HPP
 # include "iostream"
-# include "AMateria.hpp"
+# include "string"
 
-class IMateriaSource
+class Base
 {
     public:
-        virtual ~IMateriaSource() {}
-        virtual void learnMateria(AMateria*) = 0;
-        virtual AMateria* createMateria(std::string const & type) = 0;
+        // Base();
+        virtual ~Base();
+        Base * generate();
 };
 
+void identify(Base * p);
+void identify(Base & p);
 
-#endif
+#endif 

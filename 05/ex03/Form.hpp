@@ -6,13 +6,14 @@
 /*   By: chly-huc <chly-huc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/20 02:20:03 by shyrno            #+#    #+#             */
-/*   Updated: 2022/05/28 13:50:26 by chly-huc         ###   ########.fr       */
+/*   Updated: 2022/05/28 17:23:56 by chly-huc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FORM_HPP
 # define FORM_HPP
 # include "iostream"
+# include "string"
 # include "stdexcept"
 # include "Bureaucrat.hpp"
 
@@ -49,7 +50,7 @@ class Form
         Form(void);
         Form(std::string name, int execGrade, int signGrade);
         Form(Form & copy);
-        ~Form(void);
+        virtual ~Form(void);
         virtual void execute(Bureaucrat const & executor) const = 0;
         Form & operator=(const Form & rhs);
         int getExecGrade(void) const;

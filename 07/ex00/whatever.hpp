@@ -1,17 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   template.hpp                                       :+:      :+:    :+:   */
+/*   whatever.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: shyrno <shyrno@student.42.fr>              +#+  +:+       +#+        */
+/*   By: chly-huc <chly-huc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/22 22:08:11 by shyrno            #+#    #+#             */
-/*   Updated: 2021/10/22 22:36:24 by shyrno           ###   ########.fr       */
+/*   Updated: 2022/05/28 18:14:30 by chly-huc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef WHATEVER_HPP
+#define WHATEVER_HPP
 #include "iostream"
-#include "string"
 
 template <typename T>
 T max(const T &a, T &b)
@@ -32,3 +33,5 @@ void swap(T &a, T &b)
 	a = b;
 	b = temp;
 }
+
+#endif

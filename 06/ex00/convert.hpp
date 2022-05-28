@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   convert.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: shyrno <shyrno@student.42.fr>              +#+  +:+       +#+        */
+/*   By: chly-huc <chly-huc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/22 01:26:14 by shyrno            #+#    #+#             */
-/*   Updated: 2021/10/25 00:45:36 by shyrno           ###   ########.fr       */
+/*   Updated: 2022/05/28 18:16:55 by chly-huc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef CONVERT_HPP
+#define CONVERT_HPP
 #include "iostream"
-#include "string"
 #include <iomanip>
 
 class Convert
@@ -37,3 +38,5 @@ class Convert
         bool inf_pos;
         bool nan;
 };
+
+#endif

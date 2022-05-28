@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   convert.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: shyrno <shyrno@student.42.fr>              +#+  +:+       +#+        */
+/*   By: chly-huc <chly-huc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/22 01:35:25 by shyrno            #+#    #+#             */
-/*   Updated: 2021/10/25 17:30:27 by shyrno           ###   ########.fr       */
+/*   Updated: 2022/05/28 17:16:40 by chly-huc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,30 +21,39 @@ Convert::Convert(void)
     this->inf_neg = false;
     this->inf_pos = false;
     this->nan = false;
-    std::cout << "Convert Default constructor called" << std::endl;
+    //std::cout << "Convert Default constructor called" << std::endl;
 }
 
 Convert::Convert(std::string str)
 {
     
-    this->int_v = atoi(str.c_str());
-    this->char_v = static_cast<char>(int_v);
-    this->float_v = static_cast<float>(int_v);
-    this->double_v = static_cast<double>(int_v);
+    this->double_v = std::strtod(str.c_str(), NULL);
+    this->int_v = static_cast<int>(double_v);
+    this->char_v = static_cast<char>(double_v);
+    this->float_v = static_cast<float>(double_v);
     this->inf_neg = false;
     this->inf_pos = false;
     this->nan = false;
     this->exception(str);
-    std::cout << "Convert Parametric constructor called" << std::endl;
+    //std::cout << "Convert Parametric constructor called" << std::endl;
 }
 
 Convert::~Convert(void) 
 {
-    std::cout << "Convert Destructor called" << std::endl;    
+    //std::cout << "Convert Destructor called" << std::endl;    
 }
 
 Convert & Convert::operator=(const Convert & rhs) 
 {
+    
+    this->char_v = rhs.char_v;
+    this->int_v = rhs.int_v;
+    this->float_v = rhs.float_v;
+    this->double_v = rhs.double_v;
+    this->inf_neg = rhs.inf_neg;
+    this->inf_pos = rhs.inf_pos;
+    this->nan = rhs.nan;
+    
     return *this;
 }
 
