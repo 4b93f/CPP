@@ -3,13 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   span.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: shyrno <shyrno@student.42.fr>              +#+  +:+       +#+        */
+/*   By: chly-huc <chly-huc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/23 01:00:52 by shyrno            #+#    #+#             */
-/*   Updated: 2021/10/26 02:45:32 by shyrno           ###   ########.fr       */
+/*   Updated: 2022/05/31 16:13:24 by chly-huc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef SPAN_HPP
+#define SPAN_HPP
 #include "iostream"
 #include "string"
 #include <vector>
@@ -48,3 +50,5 @@ class Span
         std::vector<int> tab;
         unsigned int N;
 };
+
+#endif

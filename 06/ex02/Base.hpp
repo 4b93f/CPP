@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   base.hpp                                           :+:      :+:    :+:   */
+/*   Base.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: chly-huc <chly-huc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/28 17:32:08 by chly-huc          #+#    #+#             */
-/*   Updated: 2022/05/28 18:35:25 by chly-huc         ###   ########.fr       */
+/*   Updated: 2022/05/31 14:10:38 by chly-huc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,11 @@
 class Base
 {
     public:
-        // Base();
         virtual ~Base();
         Base * generate();
+        void identify(Base * p);
+        void identify(Base & p);
 };
 
-void identify(Base * p);
-void identify(Base & p);
 
 #endif 

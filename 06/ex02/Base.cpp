@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   base.cpp                                           :+:      :+:    :+:   */
+/*   Base.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: chly-huc <chly-huc@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/28 17:37:39 by chly-huc          #+#    #+#             */
-/*   Updated: 2022/05/28 18:35:45 by chly-huc         ###   ########.fr       */
+/*   Updated: 2022/05/31 14:11:11 by chly-huc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ Base::~Base()
 
 }
 
-Base * generate()
+Base * Base::generate()
 {
     Base *ret = NULL; 
     srand(time(NULL));
@@ -43,7 +43,7 @@ Base * generate()
     return ret;
 }
 
-void identify(Base *p)
+void Base::identify(Base *p)
 {
     A* var_a = dynamic_cast<A*>(p);
     B* var_b = dynamic_cast<B*>(p);
@@ -51,14 +51,44 @@ void identify(Base *p)
 
     if (var_a)
         std::cout << "ITS A !" << std::endl;
-    if (var_b)
+    else if (var_b)
         std::cout << "ITS B !" << std::endl;
-    if (var_c)
+    else if (var_c)
         std::cout << "ITS C !" << std::endl;
 
 }
 
-void identify(Base &p)
+void Base::identify(Base &p)
 {
-    
+    try
+    {
+        A& var_a = dynamic_cast<A&>(p);
+        std::cout << "ITS A !" << std::endl;
+        return;
+    }
+    catch(const std::exception & e)
+    {
+        (void)e;
+    }
+    try
+    {
+        B& var_b = dynamic_cast<B&>(p);
+        std::cout << "ITS B !" << std::endl;
+        return;
+        
+    }
+    catch(const std::exception & e)
+    {
+        (void)e;
+    }
+    try
+    {
+        C& var_c = dynamic_cast<C&>(p);
+        std::cout << "ITS C !" << std::endl;
+        return;
+    }
+    catch(const std::exception & e)
+    {
+        (void)e;
+    } 
 }
